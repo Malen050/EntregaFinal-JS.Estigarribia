@@ -1,0 +1,382 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilo del header */
+
+h1{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    font-family: 'Sono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(236, 215, 122);
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: medium;
+    font-weight: bolder;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILO DEL MAIN */
+
+
+/* tamaño SVG */
+svg{
+    width: 30px;
+    height: 30px;
+    color: yellow;
+}
+
+/* Flecha */
+
+.flecha{
+    text-align: center;
+}
+
+
+/* ESTILO DE SECCIÓN CONTACTOS */
+
+section{
+    background-color: rgb(249, 239, 227);
+    margin: 10px;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenedor-contactos{
+    font-family: 'Sono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 120px; 
+    margin-bottom: 150px;
+}
+
+.contenedor-contactos h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.contenedor-contactos p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contenedor-contactos a{
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.contenedor-contactos form .campo, textarea{
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.contenedor-contactos form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.contenedor-contactos .btn-enviar{
+    padding: 13px;
+    font-size: 16px;
+    color: rgb(69, 66, 66);
+    font-weight: bolder;
+    border: none;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+/* ESTILO DEL CATALOGO */
+
+.Catalogo{
+    font-family: 'Sono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 40px;
+}
+
+
+#contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 7rem; }
+  
+  .producto {
+    border-radius: 15px; 
+}
+  
+  .producto:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}
+  
+  .producto img { 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s; 
+}
+  
+  
+   
+  
+  .info-product {
+    
+    font-size: 1rem;
+    padding: 10px 10px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    font-family: 'Sono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+  
+  
+.productos img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s; 
+}
+  
+ 
+.productos img:hover {
+    transform: scale(1.2); 
+}
+
+.producto figure {
+    overflow: hidden; }   
+
+  
+
+
+
+#boton-carrito {
+    border: none;
+    color: royalblue;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 15px 15px;
+    padding: 5px 10px;
+    transition: all .3s;
+
+}
+#boton-carrito:hover {
+    cursor: pointer;
+    color: white; 
+    background-color: rgb(36, 91, 139);
+}
+
+#boton-carrito:focus {
+    outline: none;
+}
+
+
+
+.precioProducto {
+    font-weight: 900;
+    
+    
+}
+.boton-agregar {
+
+    border: none;
+    background: none;
+    background-color: #053f33;
+    color: whitesmoke;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 7px 7px;
+ 
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+    background-color: coral;
+    transform: scale(0.9);
+   
+}
+
+.boton-agregar:focus {
+    outline: none;
+}
+
+
+
+/* ESTILOS DEL MODAL */
+
+.modal-contenedor {
+    font-family: 'Sono', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 600px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: royalblue;
+    padding-bottom: 5px;
+}
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: royalblue;
+    border: none;
+    background-color: white;
+}
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+.modal-carrito .precioProducto {
+    padding-top: 10px;
+    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+.boton-eliminar:focus {
+    outline: none;
+}
+
+
+
+
+/* ESTILO CARRUSEL */
+
+.carousel-inner{
+    height: 750px;
+    width: 10px;
+    padding: 35px;
+    margin-bottom: 7rem;
+}
+
+/* ESTILO DEL FOOTER */
+
+footer{
+    text-align: center;
+    background-color: rgb(142, 158, 145);
+    padding: 10px;
+    
+}
+
+/* IMG DE PATROCINADOR */
+
+#patrocinadores{
+    display: flex; 
+}
+
+.patrocinador-img{  
+    margin-top: 40px;  
+    padding: 10px;
+    height: 200px;
+    width: 379px;  
+}
+
+
+/* EFECTOS DEL SUBRAYADO */
+
+.subrayado:hover{
+    text-decoration: underline;
+}
